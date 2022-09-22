@@ -7,7 +7,7 @@ import Layout from '../components/Layout';
 
 function MyApp({ Component, pageProps }) {
 
-  NProgress.configure({ showSpinner: false});
+  NProgress.configure({ showSpinner: true});
 
   Router.events.on('routeChangeStart', () => {
     NProgress.start();
